@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fashionbible</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <header class="py-4">
+        <h1 class="text-center">FASHION BIBLE</h1>
+        
+
+        <nav aria-label="Sommaire">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="#partie-1">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#partie-2">Forecast</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#partie-3">Latest</a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="#partie-4">Next</a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="#partie-5">Archives</a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="#partie-6">Timeline</a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="#partie-7">Radar</a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="#partie-8">Rankings</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#glossaire">Glossaire</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            
+            <!-- Partie 1 -->
+          <section id="Articles" class="my-5">
+    <h2 class="mb-4">À LA UNE</h2>
+
+    <div id="carouselArticles" class="carousel slide border rounded-4 overflow-hidden" data-bs-ride="carousel">
+        
+        <!-- Indicateurs en bas -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselArticles" data-bs-slide-to="0" class="active bg-dark" aria-current="true" aria-label="Article 1"></button>
+            <button type="button" data-bs-target="#carouselArticles" data-bs-slide-to="1" class="bg-dark" aria-label="Article 2"></button>
+            <button type="button" data-bs-target="#carouselArticles" data-bs-slide-to="2" class="bg-dark" aria-label="Article 3"></button>
+        </div>
+
+        <div class="carousel-inner">
+
+            <!-- SLIDE 1 (Image à gauche + Texte à droite) -->
+            <div class="carousel-item active">
+                <div class="row g-0 align-items-stretch">
+                    <div class="col-md-7">
+                        <img src="images/Coperni.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Image article sur Coperni" style="min-height: 400px;">
+                    </div>
+                    <div class="col-md-5 p-4 p-lg-5 d-flex flex-column justify-content-center bg-light">
+                        <span class="badge bg-dark align-self-start mb-2"></span>
+                        <h3 class="h4">Coperni met fin à ses activités</h3>
+                        <p class="text-muted">
+                            Résumé de ton premier article ici. Tu peux aussi y glisser un lien vers ton <a href="#terme-1">glossaire</a>.
+                        </p>
+                        <a href="#article-1" class="btn btn-dark align-self-start mt-2">Lire l'article</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SLIDE 2 -->
+            <div class="carousel-item">
+                <div class="row g-0 align-items-stretch">
+                    <div class="col-md-7">
+                        <img src="image2.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Description image 2" style="min-height: 400px;">
+                    </div>
+                    <div class="col-md-5 p-4 p-lg-5 d-flex flex-column justify-content-center bg-light">
+                        <span class="badge bg-dark align-self-start mb-2">TREND 02</span>
+                        <h3 class="h4">Titre du deuxième article à la une</h3>
+                        <p class="text-muted">
+                            Résumé de ton deuxième article ici pour présenter la tendance.
+                        </p>
+                        <a href="#article-2" class="btn btn-dark align-self-start mt-2">Lire l'article</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SLIDE 3 -->
+            <div class="carousel-item">
+                <div class="row g-0 align-items-stretch">
+                    <div class="col-md-7">
+                        <img src="image3.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Description image 3" style="min-height: 400px;">
+                    </div>
+                    <div class="col-md-5 p-4 p-lg-5 d-flex flex-column justify-content-center bg-light">
+                        <span class="badge bg-dark align-self-start mb-2">TREND 03</span>
+                        <h3 class="h4">Titre du troisième article à la une</h3>
+                        <p class="text-muted">
+                            Résumé de ton troisième article ici.
+                        </p>
+                        <a href="#article-3" class="btn btn-dark align-self-start mt-2">Lire l'article</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Flèches Précédent / Suivant -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselArticles" data-bs-slide="prev" style="width: 5%;">
+            <span class="carousel-control-prev-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+            <span class="visually-hidden">Précédent</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselArticles" data-bs-slide="next" style="width: 5%;">
+            <span class="carousel-control-next-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
+            <span class="visually-hidden">Suivant</span>
+        </button>
+
+    </div>
+</section>
+
+            <!-- Partie 2 -->
+            <section id="partie-2">
+                <h2>2. Titre de la deuxième partie</h2>
+                <p>
+                    Paragraphe d'introduction de la deuxième partie avec un autre lien vers le <a href="#terme-2">second terme</a>.
+                </p>
+                <p>
+                    Autre paragraphe.
+                </p>
+            </section>
+
+            <!-- Partie 3 -->
+            <section id="partie-3">
+                <h2>3. Titre de la troisième partie</h2>
+                <p>
+                    Paragraphe de conclusion ou d'ouverture.
+                </p>
+            </section>
+
+            <!-- Glossaire interactif (balise dl = liste de définitions) -->
+            <aside id="glossaire">
+                <h2>Glossaire</h2>
+                <dl>
+                    <dt id="terme-1">Mot technique</dt>
+                    <dd>Définition claire et concise du premier mot.</dd>
+
+                    <dt id="terme-2">Second terme</dt>
+                    <dd>Définition claire et concise du second mot.</dd>
+                </dl>
+            </aside>
+
+        </article>
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>Réalisé par [Prénom Nom] et [Prénom Nom] — Projet Web 2026</p>
+    </footer>
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
