@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>fashionbible</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Accueil.css">
 </head>
 <body>
 
@@ -48,8 +50,9 @@
     <main>
         <article>
             
-            <!-- Partie 1 -->
-          <section id="Articles" class="my-5">
+           
+             <!-- Article à la une-->
+<section id="Articles" class="my-5">
     <h2 class="mb-4">À LA UNE</h2>
 
     <div id="carouselArticles" class="carousel slide border rounded-4 overflow-hidden" data-bs-ride="carousel">
@@ -63,60 +66,57 @@
 
         <div class="carousel-inner">
 
-            <!-- SLIDE 1 (Image à gauche + Texte à droite) -->
+            <!-- Coperni -->
             <div class="carousel-item active">
-                <div class="row g-0 align-items-stretch">
+                <div class="row g-0">
                     <div class="col-md-7">
-                        <img src="images/Coperni.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Image article sur Coperni" style="min-height: 400px;">
+                        <img src="images/Coperni-defile.webp" class="d-block w-100 object-fit-cover" alt="Image article sur Coperni" style="height: 400px;">
                     </div>
-                    <div class="col-md-5 p-4 p-lg-5 d-flex flex-column justify-content-center bg-light">
-                        <span class="badge bg-dark align-self-start mb-2"></span>
+                    <div class="col-md-5 p-4 d-flex flex-column justify-content-center carousel-texte overflow-auto" style="height: 400px;">
                         <h3 class="h4">Coperni met fin à ses activités</h3>
-                        <p class="text-muted">
-                            Résumé de ton premier article ici. Tu peux aussi y glisser un lien vers ton <a href="#terme-1">glossaire</a>.
+                        <p class="small">
+                            Un conflit interminable avec Tomorrow Ltd a poussé Coperni à cesser ses activités.
                         </p>
-                        <a href="#article-1" class="btn btn-dark align-self-start mt-2">Lire l'article</a>
+                        <a href="#article-1" class="btn btn-dark btn-sm align-self-start mt-1">Lire l'article</a>
                     </div>
                 </div>
             </div>
 
-            <!-- SLIDE 2 -->
+            <!-- Versace  -->
             <div class="carousel-item">
-                <div class="row g-0 align-items-stretch">
+                <div class="row g-0">
                     <div class="col-md-7">
-                        <img src="image2.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Description image 2" style="min-height: 400px;">
+                        <img src="images/Pieter-Mulier.png" class="d-block w-100 object-fit-cover" alt="Versace Pieter Mulier" style="height: 400px;">
                     </div>
-                    <div class="col-md-5 p-4 p-lg-5 d-flex flex-column justify-content-center bg-light">
-                        <span class="badge bg-dark align-self-start mb-2">TREND 02</span>
-                        <h3 class="h4">Titre du deuxième article à la une</h3>
-                        <p class="text-muted">
-                            Résumé de ton deuxième article ici pour présenter la tendance.
+                     <div class="col-md-5 p-4 d-flex flex-column justify-content-center carousel-texte overflow-auto" style="height: 400px;">
+                        <h3 class="h4">Versace : Pieter Mulier prêt à faire renaître la légende</h3>
+                        <p class="small">
+                            Nouvelle direction créative, retour d’Atelier Versace et repositionnement stratégique : la maison italienne ouvre un nouveau chapitre de son histoire. 
+                            Nommé à la tête de la création, Pieter Mulier dévoilera sa première collection début 2027, à l’occasion du grand retour de Versace sur le calendrier de la haute couture parisienne, après plus de dix ans d’absence.
                         </p>
-                        <a href="#article-2" class="btn btn-dark align-self-start mt-2">Lire l'article</a>
+                        <a href="#article-2" class="btn btn-dark btn-sm align-self-start mt-1">Lire l'article</a>
                     </div>
                 </div>
             </div>
 
-            <!-- SLIDE 3 -->
+            <!-- Hermes -->
             <div class="carousel-item">
-                <div class="row g-0 align-items-stretch">
+                <div class="row g-0">
                     <div class="col-md-7">
-                        <img src="image3.jpg" class="d-block w-100 h-100 object-fit-cover" alt="Description image 3" style="min-height: 400px;">
+                        <img src="images/hermes.avif" class="d-block w-100 object-fit-cover" alt="Hermès haute couture" style="height: 400px;">
                     </div>
-                    <div class="col-md-5 p-4 p-lg-5 d-flex flex-column justify-content-center bg-light">
-                        <span class="badge bg-dark align-self-start mb-2">TREND 03</span>
-                        <h3 class="h4">Titre du troisième article à la une</h3>
-                        <p class="text-muted">
-                            Résumé de ton troisième article ici.
+                    <div class="col-md-5 p-4 d-flex flex-column justify-content-center carousel-texte overflow-auto" style="height: 400px;">
+                        <h3 class="h4">Hermès : quand l'excellence artisanale rencontre la haute couture</h3>
+                        <p class="small">
+                            C’est une première historique pour la maison française. En janvier 2027, Hermès fera son entrée dans l’univers de la haute couture parisienne avec une collection inédite imaginée par Nadège Vanhée.
                         </p>
-                        <a href="#article-3" class="btn btn-dark align-self-start mt-2">Lire l'article</a>
+                        <a href="#article-3" class="btn btn-dark btn-sm align-self-start mt-1">Lire l'article</a>
                     </div>
                 </div>
             </div>
 
         </div>
 
-        <!-- Flèches Précédent / Suivant -->
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselArticles" data-bs-slide="prev" style="width: 5%;">
             <span class="carousel-control-prev-icon bg-dark rounded-circle p-2" aria-hidden="true"></span>
             <span class="visually-hidden">Précédent</span>
@@ -128,6 +128,7 @@
 
     </div>
 </section>
+     
 
             <!-- Partie 2 -->
             <section id="partie-2">
@@ -148,7 +149,7 @@
                 </p>
             </section>
 
-            <!-- Glossaire interactif (balise dl = liste de définitions) -->
+        
             <aside id="glossaire">
                 <h2>Glossaire</h2>
                 <dl>
@@ -165,7 +166,7 @@
 
     <!-- Pied de page -->
     <footer>
-        <p>Réalisé par [Prénom Nom] et [Prénom Nom] — Projet Web 2026</p>
+        <p>Réalisé par Lina Otsmane et Alyson Hu — Projet Web Fashion bible 2026</p>
     </footer>
     
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
