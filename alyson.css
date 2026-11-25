@@ -1,0 +1,96 @@
+/* Ligne horizontale de la frise chronologique */
+.frise-sommaire {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    max-width: 700px;
+    margin: 20px auto 0;
+    padding: 0;
+    position: relative;
+}
+
+/* Trait violet qui traverse toute la frise */
+.frise-sommaire::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: blueviolet;
+    z-index: 0;
+}
+
+
+.frise-sommaire li {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.frise-sommaire a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: blueviolet;
+}
+
+.frise-sommaire a::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-color: rgb(245, 236, 156); /* Fond jaune pour couper le trait */
+    border: 3px solid blueviolet;
+    border-radius: 50%;
+    margin-bottom: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
+.frise-sommaire a:hover::before {
+    background-color: blueviolet;
+    transform: scale(1.2);
+}
+
+.titre-page{
+    max-width: 1100px;   
+    margin: 50px auto;
+    padding: 0 30px;
+
+}
+
+.article-timeline {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 0 30px; 
+}
+
+
+.intro-periode {
+    max-width: 750px;       
+    margin: 0 0 40px 0;    
+    text-align: left;       
+}
+
+.bloc-rose-bertin {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.bloc-rose-bertin .texte {
+    flex: 2;
+}
+.bloc-rose-bertin .image-rose-bertin {
+    flex: 1;
+}
+.bloc-rose-bertin .image-rose-bertin img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    display: block;
+}
